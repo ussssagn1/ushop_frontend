@@ -8,6 +8,7 @@ import Blog from "./pages/Blog.vue";
 import History from "./pages/History.vue";
 import Account from "./pages/Account.vue";
 import {createPinia} from "pinia";
+import HeadphoneItem from "./pages/HeadphoneItem.vue";
 
 
 
@@ -17,6 +18,7 @@ const routes = [
     {path: '/blog', component: Blog},
     {path: '/history', component: History},
     {path: '/account', component: Account},
+    {path: '/headphone/:id', component: HeadphoneItem, props: true},
 ];
 
 const router = createRouter({
