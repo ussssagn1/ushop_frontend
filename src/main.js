@@ -7,6 +7,9 @@ import Shop from "./pages/Shop.vue";
 import Blog from "./pages/Blog.vue";
 import History from "./pages/History.vue";
 import Account from "./pages/Account.vue";
+import {createPinia} from "pinia";
+
+
 
 const routes = [
     {path: '/', component: Main},
@@ -20,7 +23,9 @@ const router = createRouter({
     history: createWebHistory(),
     routes,
 });
+const pinia = createPinia()
 
 const app = createApp(App);
+app.use(pinia)
 app.use(router)
 app.mount('#app');
