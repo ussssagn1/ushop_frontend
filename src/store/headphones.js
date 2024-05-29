@@ -15,5 +15,18 @@ export const useHeadphoneStore = defineStore("headphone", () => {
         }
     }
 
-    return {headphones, fetchItems}
+    const filteredFetchItems = async (name, filter) => {
+        try {
+            const response = await axios.get("http://localhost:3000/headphones", {
+                params: {
+                    sortBy: name,
+                    sortOrder: filter,
+                },
+            })
+            headphones.value = response.data
+        } catch (e) {
+            console.error("Error fetching headphones:", e)
+        }
+    }
+    return {headphones, fetchItems, filteredFetchItems};
 })

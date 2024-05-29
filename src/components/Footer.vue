@@ -8,24 +8,24 @@
       <ul class="flex items-center justify-between gap-[41px]">
         <li>
           <a href="#" class="text-[#707070] text-[16px]">
-            CONTACT
+            КОНТАКТИ
           </a>
         </li>
         <li>
           <a href="#" class="text-[#707070] text-[16px]">
-            TERMS OF SERVICES
+            УМОВИ НАДАННЯ ПОСЛУГ
           </a>
         </li>
         <li>
           <a href="#" class="text-[#707070] text-[16px]">
-            SHIPPING AND RETURNS
+            ДОСТАВКА ТА ПОВЕРНЕННЯ
           </a>
         </li>
       </ul>
       <input type="email" class="w-[396px] h-[40px] border-b-2 py-3 pr-10" placeholder="Give an email, get the newsletter.">
     </div>
     <div class="flex items-center justify-between">
-      <div class="text-[#707070]"><span class="text-black">© 2021 Shelly.</span> Terms of use <span class="text-black">and</span> privacy policy.</div>
+      <div class="text-[#707070]"><span class="text-black">© 2024 ussagni.</span> Terms of use <span class="text-black">and</span> privacy policy.</div>
       <div>
         <ul class="flex justify-between items-center gap-[30px]">
           <li>

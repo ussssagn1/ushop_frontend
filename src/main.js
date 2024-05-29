@@ -9,6 +9,9 @@ import History from "./pages/History.vue";
 import Account from "./pages/Account.vue";
 import {createPinia} from "pinia";
 import HeadphoneItem from "./pages/HeadphoneItem.vue";
+import {autoAnimatePlugin} from "@formkit/auto-animate/vue";
+import Dashboard from "./components/Dashboard.vue";
+import Orders from "./components/Orders.vue";
 
 
 
@@ -19,6 +22,8 @@ const routes = [
     {path: '/history', component: History},
     {path: '/account', component: Account},
     {path: '/headphone/:id', component: HeadphoneItem, props: true},
+    { path: '/dashboard', component: Dashboard },
+    { path: '/orders', component: Orders },
 ];
 
 const router = createRouter({
@@ -29,5 +34,6 @@ const pinia = createPinia()
 
 const app = createApp(App);
 app.use(pinia)
+app.use(autoAnimatePlugin)
 app.use(router)
 app.mount('#app');
